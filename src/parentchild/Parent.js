@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Child from "./Child";
+import Test2 from "./Test2";
 
 const Parent = () => {
     const [name, setName]=useState('789');
@@ -11,17 +12,6 @@ const Parent = () => {
         username:'',
         password:''
     })
-
-    // const onChangeUserName=(e)=>{
-    //     console.log(e.target);
-    //     const {value}=e.target;
-    //     setUsername(value)
-    // }
-    // const onChangePassword=(e)=>{
-    //     console.log(e.target);
-    //     const {value}=e.target;
-    //     setPassword(value)
-    // }
 const a={
     name:'xyz',
     class:'A',
@@ -34,9 +24,12 @@ const a={
         setUserpass({...userpass, [name]:value })
     }
 
+   
+
 
     return (
         <>Parent com ---
+        <Test2 />
         <Child data={'Helooooo'} val={'hello 2'} val2={'helo 3'} 
         sendDataxy={(data)=>{
             console.log('data received in parent',data);
